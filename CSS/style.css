@@ -1,27 +1,55 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(178, 164, 253);
+}
 header {
-  background-color: beige;
-  height: 300px;
+  margin: 0px 40px;
 }
 nav {
-  background-color: white;
+  background-color: rgb(178, 164, 253);
   display: flex;
   justify-content: space-between;
 }
 .container {
-  background-color: blue;
+  width: 70%;
+  margin: auto;
+}
+.card {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+}
+.card img {
+  width: 100%;
+  border-radius: 15px;
 }
 footer {
-  background-color: bisque;
+  background-color: rgb(106, 81, 252);
   height: 100px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 0;
+  margin-top: 15px;
+  p {
+    color: white;
+  }
 }
 .logo-manu {
   display: flex;
+
+  justify-content: space-be tween;
   align-items: center;
 }
 .logo-name {
   display: flex;
   align-items: center;
   gap: 10px;
+  color: rgb(255, 255, 255);
 }
 .manu ul {
   display: flex;
@@ -36,16 +64,35 @@ footer {
   gap: 10px;
 }
 .btn-r {
-  background-color: rgb(40, 168, 241);
+  background-color: rgb(120, 98, 243);
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
+  border: none;
+}
+.btn-r:hover {
+  background-color: rgb(255, 238, 0);
+  color: white;
 }
 .btn-l {
   background-color: rgb(255, 255, 255);
-  color: rgb(40, 168, 241);
+  color: rgb(178, 164, 253);
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
+  border: none;
+}
+.btn-l:hover {
+  background-color: rgba(15, 255, 15, 0.541);
+  color: rgb(178, 164, 253);
+}
+.manu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+.manu ul li a:hover {
+  text-decoration: none;
+  color: red;
 }
