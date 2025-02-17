@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Responsive From Figma Design</title>
+    <style>
+        :root {
+  --primary-color: rgb(211, 109, 177);
+  --secondary-color: rgb(224, 224, 224);
+  --backgrond-color: rgb(224, 224, 224);
+  --text-color-normal: rgb(0, 0, 0);
+  --box-shadow: rgb(173, 170, 170);
+  --base-white: rgb(255, 255, 255);
+}
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+header {
+  background-color: var(--backgrond-color);
+  padding: 10px;
+  box-shadow: var(--box-shadow) 0px 1px 5px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color-normal);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--primary-color);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.header-button {
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 15px;
+  list-style: none;
+
+  margin: 15px;
+
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  a:hover{
+    text-decoration: none;
+    color: var(--text-color-normal);
+  }
+}
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-login {
+  padding: 10px 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+
+  color: var(--text-color-normal);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover{
+     padding: 10px 20px;
+  border: 1px solid var(--text-color-normal);
+  border-radius: 5px;
+  background-color: var(--backgrond-color);
+  color: var(--text-color-normal);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-login:hover{
+    padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--base-white);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+
+}
+
+.hero{
+display: flex;
+justify-content: space-between;
+align-items: center;
+    h1{
+        color: var(--primary-color);
+    }
+}
+
+.left-side{
+width: 50%;
+    h1{
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 1.2rem;
+        margin: 20px 0;
+    }
+}
+.right-side{
+    width: 50%;
+    imag{
+        width: 100%;
+    }
+}
+
+.solution{
+    margin-top: 50px;
+}
+
+.solution-header{
+    text-align: center;
+    margin-bottom: 20px;
+    h2{
+        font-size: 2rem;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+}
+
+.solution-contianer{
+display: flex;
+justify-content: space-between;
+item{
+    width: 30%;
+}
+}
+
+ .item{
+        box-shadow: var(--box-shadow) 1px 2px 3px;
+        padding: 20px;
+        border-radius: 10px;
+        
+        margin: 20px;
+        h3{
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        p{
+        font-size: 1rem;
+        margin-bottom: 10px;
+        }
+    }
+.customize{
+
+}
+
+.support{
+
+}
+
+.discover{
+    
+}
+.discover-content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-menu">
+                <div class="logo">
+                    <img src="images/Mack Logo.png" alt="">
+                <h1>Zephtor</h1>
+            </div>
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Feathers</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-button">
+                <button class="btn">Sign up</button>
+                <button class="btn-login">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <div class="left-side">
+                <h1>Your digital transformation begins here</h1>
+                <p>Unlock the full potential of your business. Start your journey today and experience the future of business software.</p>
+                <button class="btn">Explore Felthers</button>
+                <button class="btn">Get Started</button>
+                <p>No credit card required</p>
+            </div>
+
+
+            <div class="right-side">
+                <img src="images/shopping basket with cosmetics.png" alt="">
+            </div>
+
+        </section>
+
+        <section class="solution">
+            <div class="solution-header">
+                <h2>SaaS solutions that drive results</h2>
+                <p>Explore our suite of powerful software solutions.</p>
+            </div>
+            <div class="solution-contianer">
+                <div class="item">
+                    <h3>Enterprise planning</h3>
+                    <p>Seamlessly manage and integrate all core business functions to optimize efficiency and productivity.</p>
+                </div>
+                
+                <div class="item">
+                    <h3>Project management</h3>
+                    <p>Ensure project success by efficiently planning, executing, and tracking your initiatives with our project management software.</p>
+                </div>
+                
+                <div class="item">
+                    <h3>Analytics and reporting</h3>
+                    <p>Leverage data-driven insights to make informed decisions and stay ahead of the competition.</p>
+                </div>
+                </section>
+
+                <section class="customize">
+        Homeeork
+    </section>
+
+    <section class="support">
+        Homeeork
+    </section>
+
+    <section class="discover">
+        <div class="solution-header">
+            <h2>title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nesciunt?</p>
+        </div>
+
+        <div class="discover-content">
+            <div class="item">
+                <h3>sub-title</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa rerum earum sit cum quisquam modi eum ex esse? Sapiente libero labore </p>
+            </div>
+            <div class="item">
+                <h3>sub-title</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa rerum earum sit cum quisquam modi eum ex esse? Sapiente libero labore </p>
+            </div>
+            <div class="item">
+                <h3>sub-title</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa rerum earum sit cum quisquam modi eum ex esse? Sapiente libero labore </p>
+            </div>
+            <div class="item">
+                <h3>sub-title</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa rerum earum sit cum quisquam modi eum ex esse? Sapiente libero labore </p>
+            </div>
+            <div class="item">
+                <h3>sub-title</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa rerum earum sit cum quisquam modi eum ex esse? Sapiente libero labore </p>
+            </div>
+            <div class="item">
+                <h3>sub-title</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa rerum earum sit cum quisquam modi eum ex esse? Sapiente libero labore </p>
+            </div>
+            <div class="item">
+                <h3>sub-title</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa rerum earum sit cum quisquam modi eum ex esse? Sapiente libero labore </p>
+            </div>
+            <div class="item">
+                <h3>sub-title</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa rerum earum sit cum quisquam modi eum ex esse? Sapiente libero labore </p>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    
+                
+            </div>
+        
+
+
+
+    <footer>
+
+    </footer>
+</body>
+</html>
